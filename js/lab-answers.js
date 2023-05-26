@@ -124,27 +124,61 @@ whereIsWaldo.splice(1, 1);
 
 whereIsWaldo[1][2] = "No One";
 
-console.log(whereIsWaldo[2][1][1]);
+// console.log(whereIsWaldo[2][1][1]);
 
 ////////////////////////////
 // Excited Kitten
 ////////////////////////////////
 
+const catSpeak = [
+  "...human... why you taking pictures of me...?",
+  "...the catnip made me do it...",
+  "...why does the red dot always get away...?",
+];
+
+// const randomCatSpeak = Math.floor(Math.random() * 2 + 1);
+// console.log(randomCatSpeak);
+
+for (let i = 1; i <= 20; i++) {
+  const randomCatSpeak = Math.floor(Math.random() * 3);
+  if (i % 2 === 0) {
+    console.log(i, catSpeak[randomCatSpeak]);
+  } else {
+    console.log(i);
+  }
+}
+
 ////////////////////////////
 // Find the Median
 ////////////////////////////////
+
+
+
+
 ////////////////////////////
 // Hungry for More?
 ////////////////////////////////
+
+
+
 ////////////////////////////
 // Alien Attire
 ////////////////////////////////
+
+
+
 ////////////////////////////
 // Dress Us Up
 ////////////////////////////////
+
+
+
 ////////////////////////////
 // Dirty Laundry
 ////////////////////////////////
+
+
+
 ////////////////////////////
 // Inventory
 ////////////////////////////////
