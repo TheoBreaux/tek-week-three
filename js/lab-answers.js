@@ -40,20 +40,26 @@ const porgee = ["Porgee", "Porg", 186, "Ahch-To"];
 const dart = ["D'Art", "Demogorgan Dog", 2, "Upside Down"];
 
 plantee[2] = 5001;
-console.log(plantee);
+// console.log(plantee);
 
 wolfy[3] = "Gotham City";
-console.log(wolfy);
+// console.log(wolfy);
 
 dart[4] = "Hawkins";
-console.log(dart);
+// console.log(dart);
 
 wolfy.splice(0, 1, "Gameboy");
-console.log(wolfy);
+// console.log(wolfy);
 
 ////////////////////////////
 // Yell at the Ninja Turtles
 ////////////////////////////////
+
+const turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+
+for (const turtle of turtles) {
+    console.log(turtle.toUpperCase());
+}
 
 ////////////////////////////
 // Methods Revisited
