@@ -58,12 +58,52 @@ wolfy.splice(0, 1, "Gameboy");
 const turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
 
 for (const turtle of turtles) {
-    console.log(turtle.toUpperCase());
+    // console.log(turtle.toUpperCase());
 }
 
 ////////////////////////////
-// Methods Revisited
+// Methods, Revisited
 ////////////////////////////////
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+
+// console.log(favMovies.indexOf('Titanic'));
+
+// console.log(favMovies.sort());
+
+// console.log(favMovies.pop());
+// console.log(favMovies.push("Guardians of the Galaxy"));
+// console.log(favMovies);
+
+// favMovies.reverse();
+// console.log(favMovies);
+
+// console.log(favMovies.shift());
+// console.log(favMovies.unshift());
+
+// favMovies.splice(favMovies.indexOf("Django Unchained"), 1, "Avatar")
+
+// console.log(favMovies.slice(favMovies.length/2));
+
+const slicedMovies = favMovies.slice(favMovies.length/2)
+// console.log(slicedMovies);
+
+console.log(favMovies.indexOf('Fast and Furious'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ////////////////////////////
 // Where is Waldo
