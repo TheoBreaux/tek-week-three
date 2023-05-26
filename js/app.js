@@ -81,18 +81,123 @@
 // 	console.log(c);
 // }
 
+// let x = 30;
 
-let x = 30;
+// while (x > 0) {
+// 	x /= 2;
+// 	x--;
 
-while (x > 0) {
-	x /= 2;
-	x--;
+// 	if (x % 1 != 0) {
+// 		break;
+// 	}
 
-	if (x % 1 != 0) {
-		break;
-	}
-	
-	console.log(x);
-}
+// 	console.log(x);
+// }
 
+// Count down to 0 from a given number.
 
+// let num = 200;
+
+// while (num >= 0) {
+// 	console.log(num);
+// 	num--;
+// }
+
+// Log integers in multiples of 3 as long as they are less than 35.
+
+// let num = 0;
+
+// while (num < 35) {
+//   console.log(num);
+//   num += 3;
+// }
+
+// Print integers in multiples of 5 as long as they are less than 100
+// let num = 0;
+
+// while (num < 100) {
+//   console.log(num);
+//   num += 5;
+// }
+
+// Print integers between 0 and 20 with the following conditions:
+
+// All numbers divisible by 2 should be multiplied by 3 before they are output.
+// All other integers should not be output.
+
+// let num = 0;
+
+// while (num <= 20) {
+//   //check if num is divisibile by 2
+//   if (num % 2 === 0) {
+//    console.log(num * 3);
+//   }
+// 	// increment num by 1
+// 	num++;
+//   }
+
+// let cookie = 4;
+// let payment = 10;
+
+// let change = payment - cookie;
+
+// let totalQuarters = 0;
+
+// while (change > 0) {
+// 	change -= .25;
+// 	totalQuarters++;
+// }
+
+// console.log(totalQuarters);
+
+// let x = 10;
+
+// do {
+// 	x--;
+// 	console.log(x);
+// } while (x > 50);
+
+// let x = 1;
+// let y = 1;
+
+// myLoop: while (true) {
+//   console.log(`Outer loop ${x}.`);
+//   x++;
+
+//   while (true) {
+//     console.log(`Inner loop ${y}.`);
+//     y++;
+
+//     if (x == 5 && y % 5 == 0) {
+//       break myLoop;
+//     } else if (y % 5 == 0) {
+//       break;
+//     }
+//   }
+// }
+
+// -----------------------------------------------------------------
+// Reverse a string using a for loop(no using .reverse())
+// let str = "PerScholas";
+// let result = "";
+
+// for (let i = str.length - 1; i >= 0; i--) {
+// 	result += str[i];
+// }
+// console.log(result);
+
+// Write a for loop that calculates and prints the sum of all numbers from 1 to 100.
+// let sum = 0;
+
+// for (let i = 1; i <= 100; i++) {
+// 	sum += i;
+// 	console.log(sum);
+// }
+
+// Write a for loop that prints the multiplication table for a given number
+
+// let num = 3;
+
+// for (let i = 1; i <= 100; i++) {
+//   console.log(i * num);
+// }
