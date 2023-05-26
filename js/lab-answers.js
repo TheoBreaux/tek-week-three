@@ -153,12 +153,27 @@ for (let i = 1; i <= 20; i++) {
 ////////////////////////////////
 const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
 
-const sortedNumsLength = nums.sort();
-console.log(sortedNumsLength);
+const sortedNums = nums.sort();
+console.log(sortedNums);
 
-const medValue = Math.floor(sortedNumsLength.length/2);
+const middle = Math.floor(nums.length / 2)
+console.log(middle);
 
-console.log(medValue);
+console.log(sortedNums[middle]);
+
+
+
+// const sortedNumsLength = nums.sort();
+// const middle = Math.floor(sortedNumsLength.length / 2);
+
+
+// const median = sortedNumsLength[middle]
+
+// console.log(middle)
+
+
+
+
 
 
 
