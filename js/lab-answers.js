@@ -142,15 +142,24 @@ const catSpeak = [
 for (let i = 1; i <= 20; i++) {
   const randomCatSpeak = Math.floor(Math.random() * 3);
   if (i % 2 === 0) {
-    console.log(i, catSpeak[randomCatSpeak]);
+    // console.log(i, catSpeak[randomCatSpeak]);
   } else {
-    console.log(i);
+    // console.log(i);
   }
 }
 
 ////////////////////////////
 // Find the Median
 ////////////////////////////////
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+const sortedNumsLength = nums.sort();
+console.log(sortedNumsLength);
+
+const medValue = Math.floor(sortedNumsLength.length/2);
+
+console.log(medValue);
+
 
 
 
