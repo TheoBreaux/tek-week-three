@@ -55,16 +55,36 @@ wolfy.splice(0, 1, "Gameboy");
 // Yell at the Ninja Turtles
 ////////////////////////////////
 
-const turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+const turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
 for (const turtle of turtles) {
-    // console.log(turtle.toUpperCase());
+  // console.log(turtle.toUpperCase());
 }
 
 ////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
-const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+const favMovies = [
+  "Jaws",
+  "The Fellowship of the Ring",
+  "Howl's Moving Castle",
+  "Django Unchained",
+  "Cloud Atlas",
+  "The Usual Suspects",
+  "Toy Story",
+  "Conan the Barbarian",
+  "Titanic",
+  "Harry Potter",
+  "Fried Green Tomatoes",
+  "Volver",
+  "Oculus",
+  "Seven",
+  "Black Panther",
+  "Harry Potter",
+  "Imitation of Life",
+  "Snatch",
+  "Fast and Furious",
+];
 
 // console.log(favMovies.indexOf('Titanic'));
 
@@ -84,30 +104,27 @@ const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle'
 
 // console.log(favMovies.slice(favMovies.length/2));
 
-const slicedMovies = favMovies.slice(favMovies.length/2)
+const slicedMovies = favMovies.slice(favMovies.length / 2);
 // console.log(slicedMovies);
 
-console.log(favMovies.indexOf('Fast and Furious'))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// console.log(favMovies.indexOf('Fast and Furious'))
 
 ////////////////////////////
 // Where is Waldo
 ////////////////////////////////
+const whereIsWaldo = [
+  ["Timmy", "Frank"],
+  "Eggbert",
+  ["Lucinda", "Jacc", "Neff", "Snoop"],
+
+  ["Petunia", ["Baked Goods", "Waldo"]],
+];
+
+whereIsWaldo.splice(1, 1);
+
+whereIsWaldo[1][2] = "No One";
+
+console.log(whereIsWaldo[2][1][1]);
 
 ////////////////////////////
 // Excited Kitten
