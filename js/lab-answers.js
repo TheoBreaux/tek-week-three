@@ -151,58 +151,103 @@ for (let i = 1; i <= 20; i++) {
 ////////////////////////////
 // Find the Median
 ////////////////////////////////
-const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+const nums = [
+  14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18, 12,
+  17, 12, 71, 18, 15, 12,
+];
 
 const sortedNums = nums.sort();
-console.log(sortedNums);
+// console.log(sortedNums);
 
-const middle = Math.floor(nums.length / 2)
-console.log(middle);
+const middle = Math.floor(nums.length / 2);
+// console.log(middle);
 
-console.log(sortedNums[middle]);
+// console.log(sortedNums[middle]);
 
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "Per Scholas hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps",
+];
 
-
-// const sortedNumsLength = nums.sort();
-// const middle = Math.floor(sortedNumsLength.length / 2);
-
-
-// const median = sortedNumsLength[middle]
-
-// console.log(middle)
-
-
-
-
-
-
-
-
-
-////////////////////////////
-// Hungry for More?
-////////////////////////////////
-
-
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],
+  [
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs",
+  ],
+  [
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans",
+  ],
+];
 
 ////////////////////////////
 // Alien Attire
 ////////////////////////////////
 
+const kristynsShoe = kristynsCloset.shift();
+// console.log(kristynsShoe);
 
+thomsCloset[2][3] = kristynsShoe;
+
+// console.log(thomsCloset);
 
 ////////////////////////////
 // Dress Us Up
 ////////////////////////////////
 
+// Function to select a random item from an array
+function getRandomItem(array) {
+  const randomIndex = Math.floor(Math.random() * array.length);
+  return array[randomIndex];
+}
 
+// Generate three outfits
+for (let i = 0; i < 3; i++) {
+  const kristynsOutfit = [
+    getRandomItem(kristynsCloset),
+    getRandomItem(kristynsCloset),
+    getRandomItem(kristynsCloset)
+  ];
+
+  const thomsOutfit = [
+    getRandomItem(getRandomItem(thomsCloset)),
+    getRandomItem(getRandomItem(thomsCloset)),
+    getRandomItem(getRandomItem(thomsCloset))
+  ];
+
+  console.log(`Outfit ${i + 1}: Kristyn will be wearing ${kristynsOutfit.join(", ")} and Thom will be wearing ${thomsOutfit.join(", ")}.`);
+}
 
 ////////////////////////////
 // Dirty Laundry
 ////////////////////////////////
-
-
+for (let i = 0; i < kristynsCloset.length; i++) {
+  // console.log(`WHIRR: Now washing ${kristynsCloset[i]}`);
+}
 
 ////////////////////////////
 // Inventory
 ////////////////////////////////
+
+for (let i = 0; i < thomsCloset.length; i++) {
+  for (let j = 0; j < thomsCloset[i].length; j++) {
+    // console.log(thomsCloset[i][j]);
+  }
+}
